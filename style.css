@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+}
+
+body {
+  background: #f2c898;
+}
+.wrapper {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.title {
+  font-size: 28px;
+  text-align: center;
+  margin: 20px 0;
+}
+.textarea {
+  width: 920px;
+  height: 200px;
+  font-size: 28px;
+  border: 2px solid #675b41;
+  border-radius: 20px;
+  box-shadow: 5px -5px 8px #626e56, 5px 5px 8px #626e56;
+  padding: 20px;
+  margin: 20px 0;
+  outline: none;
+}
+.keyboard-border {
+  width: 920px;
+  padding: 10px 5px 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #675b41;
+  border-radius: 20px;
+  background: #849375;
+  box-shadow: 5px -5px 8px #626e56, 5px 5px 8px #626e56;
+}
+.keyboard {
+  width: 920px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #65705a;
+  border-radius: 20px;
+  padding: 10px;
+  background: #849375;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+button {
+  display: flex;
+  flex: 0 0 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #829371;
+  border-radius: 15px;
+  background: linear-gradient(215deg, #57634b, #79866b);
+  box-shadow: 4px 0px 1px #626e56, 2px 4px 6px #626e56;
+  color: #ffffff;
+  transition: all .5s ease;
+}
+button.backspace,
+button.enter,
+button.shift_right,
+button.ctrl,
+button.space {
+  flex: 0 115px;
+  justify-content: flex-end;
+}
+button.tab,
+button.caps,
+button.shift_left,
+button.ctrl_left {
+  flex: 0 100px;
+  justify-content: flex-start;
+}
+button.space {
+  flex: 0 345px;
+  justify-content: center;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  /* background: #f2c898; */
+}
+.press {
+  transform: scale(0.8);
+  /* background: #f2c898; */
+}
