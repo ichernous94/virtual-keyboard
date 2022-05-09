@@ -27,7 +27,7 @@ export default [
   }, {
     code: 'Equal', en: '=', enShift: '+', ru: '=', ruShift: '+', row: 0, place: 12,
   }, {
-    code: 'Backspace', isSpecial: true, name: 'backspace', classes: 'backspace', row: 0, place: 13,
+    code: 'Backspace', isSpecial: true, name: 'back', classes: 'backspace', row: 0, place: 13,
   },
   // 2-nd row
   {
@@ -109,15 +109,16 @@ export default [
   }, {
     code: 'Period', en: '.', enShift: '>', ru: 'ю', ruShift: 'Ю', row: 3, place: 9,
   }, {
-    code: 'Slash', en: '/', enShift: '?', ru: '.', ruShift: ',', row: 3, place: 10,
+    code: 'ArrowUp', en: '↑', enShift: '↑', ru: '↑', ruShift: '↑', classes: 'arrow arrow_up', row: 3, place: 10,
+    
   }, {
-    code: 'ArrowUp', en: '↑', enShift: '↑', ru: '↑', ruShift: '↑', classes: 'arrow arrow_up', row: 3, place: 11,
+    code: 'Slash', en: '/', enShift: '?', ru: '.', ruShift: ',', row: 3, place: 11,
   }, {
     code: 'ShiftRight', isSpecial: true, name: 'shift', classes: 'shift shift_right', row: 3, place: 12,
   },
-  // 5th row
+  // 5-th row
   {
-    code: 'ControlLeft', isSpecial: true, name: 'ctrl', classes: 'ctrl ctrl_left', row: 4, place: 0,
+    code: 'ControlLeft', isSpecial: true, name: 'control', classes: 'ctrl ctrl_left', row: 4, place: 0,
   }, {
     code: 'AltLeft', isSpecial: true, name: 'alt', classes: 'alt alt_left', row: 4, place: 1,
   }, {
@@ -133,6 +134,6 @@ export default [
   }, {
     code: 'ArrowRight', en: '→', enShift: '→', ru: '→', ruShift: '→', classes: 'arrow arrow_right', row: 4, place: 7,
   }, {
-    code: 'AltRight', isSpecial: true, name: 'alt', classes: 'alt alt_right', row: 4, place: 8,
+    code: 'ControlRight', isSpecial: true, name: 'control', classes: 'ctrl ctrl_right', row: 4, place: 8,
   },
 ];

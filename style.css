@@ -34,7 +34,7 @@ body {
 .textarea {
   width: 920px;
   height: 200px;
-  font-size: 28px;
+  font-size: 20px;
   border: 2px solid #675b41;
   border-radius: 20px;
   box-shadow: 5px -5px 8px #626e56, 5px 5px 8px #626e56;
@@ -87,18 +87,18 @@ button.enter,
 button.shift_right,
 button.ctrl,
 button.space {
-  flex: 0 115px;
+  flex: 0 90px;
   justify-content: flex-end;
 }
 button.tab,
 button.caps,
 button.shift_left,
 button.ctrl_left {
-  flex: 0 100px;
+  flex: 0 90px;
   justify-content: flex-start;
 }
 button.space {
-  flex: 0 345px;
+  flex: 0 305px;
   justify-content: center;
 }
 .press {

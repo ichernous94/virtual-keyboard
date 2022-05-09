@@ -3,9 +3,7 @@ export default class {
     this.language = this.getLanguage();
     this.keys = keys;
     this.view = view;
-
     this.capslockPressed = false;
-
     this.pressed = [];
     this.createKeyboard();
   }
@@ -42,19 +40,18 @@ export default class {
 
   updateKeys() {
     this.view.querySelectorAll('button').forEach((btn) => {
-        const data = this.getButtonInfo(btn);
-        if (!data.isSpecial) {
-          let updated = data[this.language];
+      const data = this.getButtonInfo(btn);
+      if (!data.isSpecial) {
+        let updated = data[this.language];
 
-          if (this.isPressed('Shift') || (this.isPressed('Shift') && this.isPressed('CapsLock'))) {
-            updated = data[`${this.language}Shift`];
-          } else if (this.isPressed('CapsLock')) {
-            updated = data[this.language].toUpperCase();
-          }
-
-          document.querySelector(`[data-key-code="${data.code}"]`).innerHTML = updated;
+        if (this.isPressed('Shift') || (this.isPressed('Shift') && this.isPressed('CapsLock'))) {
+          updated = data[`${this.language}Shift`];
+        } else if (this.isPressed('CapsLock')) {
+          updated = data[this.language].toUpperCase();
         }
-      });
+        document.querySelector(`[data-key-code="${data.code}"]`).innerHTML = updated;
+      }
+    });
   }
 
   setLanguage(language = this.language) {
@@ -73,7 +70,6 @@ export default class {
   }
 
   switchLanguage() {
-    // ControlLeft or AltLeft
     if (this.isPressed('ShiftLeft') && this.isPressed('AltLeft')) {
       this.language = (this.language === 'en') ? 'ru' : 'en';
       this.setLanguage(this.language);
