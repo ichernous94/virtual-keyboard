@@ -111,7 +111,7 @@ export default [
   }, {
     code: 'Slash', en: '/', enShift: '?', ru: '.', ruShift: ',', row: 3, place: 10,
   }, {
-    code: 'ArrowUp', en: '&#8593', enShift: '&#8593', ru: '&#8593', ruShift: '&#8593', classes: 'arrow arrow_up', row: 3, place: 11,
+    code: 'ArrowUp', en: '↑', enShift: '↑', ru: '↑', ruShift: '↑', classes: 'arrow arrow_up', row: 3, place: 11,
   }, {
     code: 'ShiftRight', isSpecial: true, name: 'shift', classes: 'shift shift_right', row: 3, place: 12,
   },
@@ -127,11 +127,11 @@ export default [
   }, {
     code: 'MetaRight', isSpecial: true, name: 'cmd', classes: 'cmd cmd_right', row: 4, place: 4,
   }, {
-    code: 'ArrowLeft', en: '&#8592', enShift: '&#8592', ru: '&#8592', ruShift: '&#8592', classes: 'arrow arrow_left', row: 4, place: 5,
+    code: 'ArrowLeft', en: '←', enShift: '←', ru: '←', ruShift: '←', classes: 'arrow arrow_left', row: 4, place: 5,
   }, {
-    code: 'ArrowDown', en: '&#8595', enShift: '&#8595', ru: '&#8595', ruShift: '&#8595', classes: 'arrow arrow_down', row: 4, place: 6,
+    code: 'ArrowDown', en: '↓', enShift: '↓', ru: '↓', ruShift: '↓', classes: 'arrow arrow_down', row: 4, place: 6,
   }, {
-    code: 'ArrowRight', en: '&#8594', enShift: '&#8594', ru: '&#8594', ruShift: '&#8594', classes: 'arrow arrow_right', row: 4, place: 7,
+    code: 'ArrowRight', en: '→', enShift: '→', ru: '→', ruShift: '→', classes: 'arrow arrow_right', row: 4, place: 7,
   }, {
     code: 'AltRight', isSpecial: true, name: 'alt', classes: 'alt alt_right', row: 4, place: 8,
   },
