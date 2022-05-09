@@ -29,12 +29,12 @@ body {
   text-align: center;
   letter-spacing: 5px;
   color: #626e56;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 .textarea {
   width: 920px;
   height: 200px;
-  font-size: 28px;
+  font-size: 20px;
   border: 2px solid #675b41;
   border-radius: 20px;
   box-shadow: 5px -5px 8px #626e56, 5px 5px 8px #626e56;
@@ -79,33 +79,29 @@ button {
   background: linear-gradient(215deg, #57634b, #79866b);
   box-shadow: 4px 0px 1px #626e56, 2px 4px 6px #626e56;
   color: #ffffff;
-  transition: all .5s ease;
+  cursor: pointer;
+  transition: all .3s;
 }
 button.backspace,
 button.enter,
 button.shift_right,
 button.ctrl,
 button.space {
-  flex: 0 115px;
+  flex: 0 90px;
   justify-content: flex-end;
 }
 button.tab,
 button.caps,
 button.shift_left,
 button.ctrl_left {
-  flex: 0 100px;
+  flex: 0 90px;
   justify-content: flex-start;
 }
 button.space {
-  flex: 0 345px;
+  flex: 0 305px;
   justify-content: center;
 }
-button:hover {
-  cursor: pointer;
-  transform: scale(0.95);
-  /* background: #f2c898; */
-}
 .press {
-  transform: scale(0.8);
-  /* background: #f2c898; */
+  transform: scale(0.9);
+  opacity: 0.8;
 }
