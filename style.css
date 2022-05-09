@@ -24,9 +24,12 @@ body {
   margin: 0 auto;
 }
 .title {
-  font-size: 28px;
+  font-size: 48px;
+  font-weight: bold;
   text-align: center;
-  margin: 20px 0;
+  letter-spacing: 5px;
+  color: #626e56;
+  margin: 40px 0;
 }
 .textarea {
   width: 920px;
